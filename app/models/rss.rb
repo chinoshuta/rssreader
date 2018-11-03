@@ -1,2 +1,3 @@
 class Rss < ApplicationRecord
-end
+    belongs_to :user, dependent: :destroy
+    has_many :entries
