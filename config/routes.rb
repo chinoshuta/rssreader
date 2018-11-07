@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :feeds
   get 'entries/index'
   get 'entries/show'
   devise_for :users
