@@ -1,3 +1,3 @@
 class Entry < ApplicationRecord
-    belongs_to :rss
+    belongs_to :feed
 end
