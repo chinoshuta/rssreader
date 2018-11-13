@@ -5,7 +5,7 @@ rails_env = ENV['RAILS_ENV'] || :development
 set :environment, rails_env
 
 #フィード取得
-every 1.minute do
+every 30.minute do
     rake "sync:feeds"
 end
 

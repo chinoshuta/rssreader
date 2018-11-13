@@ -2,11 +2,11 @@
   <% @entries.each do |entry| %>
     <div class="panel panel-default">
       <div class="panel-body">
-        <%= link_to entry.title, entry %> - <i> published <%= time_ago_in_words(entry.published) %> ago.</i>
+        <%= link_to entry.title, entry.url, :target=>["_blank"] %> - <i> published <%= time_ago_in_words(entry.published) %> ago.</i>
       </div>
     </div>
   <% end %>
 
   <%= link_to 'New Feed', new_feed_path %>
-  
+
 </div>
